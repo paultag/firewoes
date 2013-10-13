@@ -1,6 +1,6 @@
 #!/usr/bin/make -f
 
-PY2_PACKAGE_NAME = python-firehose
+PY2_PACKAGE_NAME = python-firewoes
 PYVERS  = $(shell pyversions -r)
 
 %:

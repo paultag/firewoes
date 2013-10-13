@@ -1,20 +1,5 @@
-python-firehose (0.3-2) UNRELEASED; urgency=low
+python-firewoes (0.2-1) experimental; urgency=low
 
-  * NOT RELEASED YET
-
- -- Paul Tagliamonte <paultag@debian.org>  Tue, 08 Oct 2013 21:26:17 -0400
-
-python-firehose (0.3-1) experimental; urgency=low
-
-  * Upstream release
-  * Add debian/test-data/findbugs_jformatstring.txt - to be removed for 0.4,
-    upstrem was missing it in the MANIFEST.in
-
- -- Paul Tagliamonte <paultag@debian.org>  Tue, 08 Oct 2013 21:14:22 -0400
-
-python-firehose (0.2-1) experimental; urgency=low
-
-  * Initial release. (To experimental because the Schema is likely to change
-    and I don't want it in testing yet)
+  * Initial release.
 
  -- Paul Tagliamonte <paultag@debian.org>  Wed, 14 Aug 2013 01:10:13 -0400
