@@ -12,6 +12,7 @@ Build-Depends:
  python-setuptools,
  python-six,
  python-nose,
+ python-flask,
 Standards-Version: 3.9.4
 Homepage: http://firewoes.debian.net/
 #Vcs-Svn: 

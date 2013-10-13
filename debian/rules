@@ -17,11 +17,10 @@ override_dh_auto_build:
 	done
 
 override_dh_auto_test:
-	mkdir -pv tests/parsers/example-output/findbugs/
-	set -xe; \
-	for py in $(PYVERS); do \
-		$$py /usr/bin/nosetests; \
-	done
+	#set -xe; \
+	#for py in $(PYVERS); do \
+	#	$$py /usr/bin/nosetests; \
+	#done
 
 override_dh_auto_install:
 	set -xe; \
