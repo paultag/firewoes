@@ -1,0 +1,33 @@
+#!/usr/bin/make -f
+
+PY2_PACKAGE_NAME = python-firehose
+PYVERS  = $(shell pyversions -r)
+
+%:
+	dh $@ --with python2
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -rvf ./*.egg-info ./build
+
+override_dh_auto_build:
+	set -xe; \
+	for py in $(PYVERS); do \
+		$$py setup.py build; \
+	done
+
+override_dh_auto_test:
+	mkdir -pv tests/parsers/example-output/findbugs/
+	set -xe; \
+	for py in $(PYVERS); do \
+		$$py /usr/bin/nosetests; \
+	done
+
+override_dh_auto_install:
+	set -xe; \
+	for py in $(PYVERS); do \
+		$$py setup.py install --skip-build --root debian/$(PY2_PACKAGE_NAME) \
+		--install-layout deb; \
+	done
+	# Remove me when dh_python2 can handle this file
+	rm -vf debian/*/usr/lib/python*/*-packages/*.egg-info/SOURCES.txt

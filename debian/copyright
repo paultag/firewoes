@@ -1,0 +1,12 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0
+Upstream-Name:
+Upstream-Contact:
+Source:
+
+Files: *
+Copyright:
+License: AGPL-3+
+
+Files: debian/*
+Copyright: 2013, Paul Tagliamonte <paultag@debian.org>
+License: AGPL-3+

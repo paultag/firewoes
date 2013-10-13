@@ -1,0 +1,27 @@
+Source: python-firewoes
+Section: python
+Priority: optional
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Uploaders: Paul Tagliamonte <paultag@debian.org>
+# I've set myself as the uploader, but I'm not the one to maintain this package.
+# Perhaps see if zack@ can upload this - didn't want to be rude and do it
+# without his consent
+Build-Depends:
+ debhelper (>= 9),
+ python-all,
+ python-setuptools,
+ python-six,
+ python-nose,
+Standards-Version: 3.9.4
+Homepage: http://firewoes.debian.net/
+#Vcs-Svn: 
+#Vcs-Browser: 
+X-Python-Version: >= 2.7
+
+Package: python-firewoes
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: web UI for viewing Firehose data with Flask
+ Fill me in because
+ paultag is a lazy dude
+ this is a haiku
